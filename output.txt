@@ -1,0 +1,60 @@
+Script started on Sun 14 Jan 2018 10:42:07 PM PST
+eddril@uw1-320-10:~/Documents/schoolDocs/ass1$ cleard[Kvim welcomelinuxnotes.txtls[Kcd schoolDocsls[Kcd Documents[K[1Plspython[4Plscd Documentsls[Kcd schoolDocsls[Kvim welcomelinuxnotes.txtcd[Klear[Kcleard[Kvim welcomelinuxnotes.txtls[Kcd schoolDocsls[Kcd schoolDocsls[Kvim welcomelinuxnotes.txtcd[Klear[Kg++ -std=c++14 -g -Wall -Wextra turtl eprogram.cpp turtleprogram.h ass1.cpp  -o hello
+eddril@uw1-320-10:~/Documents/schoolDocs/ass1$ g++ -std=c++14 -g -Wall -Wextra turtleeprogram.cpp turtleprogram.h ass1.cpp  -o hello[Aclear[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cd[Kvim welcomelinuxnotes.txtls[Kcd schoolDocs[K[K[K[K[K[K[K[K[K[K[K[K[K./hello
+tp1: [ ]
+tp2: [ F 10 ]
+tp3: [ R 90 ]
+tp1 now as tp2+tp3: [ F 10 R 90 ]
+tp1 now as tp2 * 3: [ F 10 F 10 F 10 ]
+tp4 is a copy of tp1: [ F 10 F 10 F 10 ]
+tp5: [ F 10 ]
+tp2 and tp5 are == to each other: true
+tp2 and tp3 are != to each other: true
+index 0 of tp2 is F
+tp2 after 2 calls to setindex: [ R 90 ]
+tp2 and tp3 are == to each other: true
+Check to see if tp4 changes after tp1 changes[ F 10 F 10 F 10 ]
+tp6 += tp1: [ L 30 R 10 F 10 F 10 ]
+tp6 *= 2: [ L 30 R 10 F 10 F 10 L 30 R 10 F 10 F 10 ]
+done.
+eddril@uw1-320-10:~/Documents/schoolDocs/ass1$ valgrind ./hello
+==31501== Memcheck, a memory error detector
+==31501== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==31501== Using Valgrind-3.11.0 and LibVEX; rerun with -h for copyright info
+==31501== Command: ./hello
+==31501== 
+tp1: [ ]
+tp2: [ F 10 ]
+tp3: [ R 90 ]
+tp1 now as tp2+tp3: [ F 10 R 90 ]
+tp1 now as tp2 * 3: [ F 10 F 10 F 10 ]
+tp4 is a copy of tp1: [ F 10 F 10 F 10 ]
+tp5: [ F 10 ]
+tp2 and tp5 are == to each other: true
+tp2 and tp3 are != to each other: true
+index 0 of tp2 is F
+tp2 after 2 calls to setindex: [ R 90 ]
+tp2 and tp3 are == to each other: true
+Check to see if tp4 changes after tp1 changes[ F 10 F 10 F 10 ]
+tp6 += tp1: [ L 30 R 10 F 10 F 10 ]
+tp6 *= 2: [ L 30 R 10 F 10 F 10 L 30 R 10 F 10 F 10 ]
+done.
+==31501== 
+==31501== HEAP SUMMARY:
+==31501==     in use at exit: 72,704 bytes in 1 blocks
+==31501==   total heap usage: 16 allocs, 15 frees, 75,824 bytes allocated
+==31501== 
+==31501== LEAK SUMMARY:
+==31501==    definitely lost: 0 bytes in 0 blocks
+==31501==    indirectly lost: 0 bytes in 0 blocks
+==31501==      possibly lost: 0 bytes in 0 blocks
+==31501==    still reachable: 72,704 bytes in 1 blocks
+==31501==         suppressed: 0 bytes in 0 blocks
+==31501== Rerun with --leak-check=full to see details of leaked memory
+==31501== 
+==31501== For counts of detected and suppressed errors, rerun with: -v
+==31501== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+eddril@uw1-320-10:~/Documents/schoolDocs/ass1$ exit
+
+Script done on Sun 14 Jan 2018 10:43:10 PM PST
